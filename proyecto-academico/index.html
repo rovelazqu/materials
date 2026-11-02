@@ -881,6 +881,26 @@
   .cover-qr svg { width: 100px; height: 100px; display: block; }
   .redes { color: #E07A5F; }
   .fx-aff + p b { color: #1D313E; }
+  .hz-stage { flex: 1; display: flex; align-items: center; justify-content: center; margin-bottom: 40px; }
+  .pd-hz.hz-big { font-size: 30px !important; line-height: 1.45; max-width: 960px; text-align: center; margin: 0 !important; }
+  .pd-hz.hz-big .hz-lab { font-size: 16px; margin-bottom: 14px; }
+  .pd2.pd2-big { gap: 10px !important; margin: 10px 0 24px !important; }
+  .pd2-big .pd-hd span { font-size: 20px !important; padding-bottom: 5px !important; }
+  .pd2-big .pd-d, .pd2-big .pd-p { font-size: 18px !important; padding: 8px 18px !important; min-height: 54px !important; }
+  .pd2-big .pd-p b { font-size: 18.5px; }
+  .pd2-big .pd-p span { font-size: 14.5px !important; margin-top: 3px !important; line-height: 1.35; }
+  .pd2-big .pd-hd, .pd2-big .pd-row { grid-template-columns: 0.85fr 44px 1.45fr !important; }
+  .edu-net .es-g { margin-top: 22px; }
+  .es-cons p { white-space: normal !important; line-height: 1.35 !important; }
+  .es-cons p span { display: block; font-size: 16px; color: #3B3D40; margin-top: 4px; }
+  .slide.edu-slide { padding-top: 44px !important; }
+  .edu-slide h2 { margin-bottom: 18px !important; }
+  .edu-net .edu-role { padding-bottom: 12px !important; font-size: 22px !important; }
+  .edu-net .es-g { margin-top: 20px !important; padding: 2px 0 2px 18px; }
+  .edu-net .es-g small { margin-bottom: 4px; }
+  .edu-net .es-g p { font-size: 19px !important; line-height: 1.42 !important; }
+  .es-cons p span { font-size: 14px !important; white-space: nowrap; margin-top: 2px !important; }
+  .edu-grid { margin-bottom: 18px !important; }
   /* Fragmentos y notas */
   .frag { opacity: 0; transform: translateY(10px); transition: opacity .4s ease, transform .4s ease; }
   .frag.on { opacity: 1; transform: none; }
@@ -943,6 +963,7 @@
         <div class="edu-role frag" data-f="1">Sociólogo · Metodólogo · Docente</div>
         <div class="es-g frag" data-f="2" style="--c:#1D313E"><small>Campos</small><p>Sociología económica<br>Sociología relacional-organizacional<br>Sociología cultural<br>Diseño de investigación social</p></div>
         <div class="es-g frag" data-f="2" style="--c:#A9B993"><small>Métodos</small><p>Ciencias computacionales<br>Estadística inferencial<br>Historia</p></div>
+        <div class="es-g es-cons frag" data-f="2" style="--c:#E07A5F"><small>Consultor</small><p>Mercados culturales<br><span>Ministerio de las Culturas, las Artes y el Patrimonio</span></p></div>
       </div>
     </div>
     <div class="foot"><span>Roberto Velázquez-Quiroz · Proyecto Académico: Investigación, Formación e Incidencia</span><span>Presentación Académica</span></div>
@@ -1096,11 +1117,20 @@
     <div class="av-col ed-head" style="--c:#445D6B"><h2>Propuesta Docente</h2></div>
     <h3 class="pd-sub">Doble título: Ingeniería Comercial y Sociología</h3>
     <p class="pd-lic">Licenciatura en Sociología · Licenciatura en Economía · Licenciatura en Administración de Empresas</p>
-    <div class="pd2">
+    <div class="pd2 pd2-big">
       <div class="pd-hd frag" data-f="1"><span>Desafíos</span><span></span><span>Oportunidades</span></div>
       <div class="pd-row frag" data-f="2" style="--c:#A9B993"><div class="pd-d">Valor del aula y el debate crítico</div><div class="pd-ar">→</div><div class="pd-p"><b>Docencia como desarrollo del juicio</b><span>Relevancia e intercambio (p. ej., <i>co-teaching</i>)</span></div></div><div class="pd-row frag" data-f="3" style="--c:#90A499"><div class="pd-d">Formación interdisciplinaria en temas emergentes</div><div class="pd-ar">→</div><div class="pd-p"><b>Expansión de repertorios disciplinares</b><span>Ciencias sociales computacionales · Sociología de redes · Pensamiento social y económico · Sociología de la cultura</span></div></div><div class="pd-row frag" data-f="4" style="--c:#445D6B"><div class="pd-d">Inserción de nuevos profesionales</div><div class="pd-ar">→</div><div class="pd-p"><b>Dirección de proyectos de título y pasantía</b><span>Coordinación · Portafolio de contrapartes · Reuniones de acompañamiento</span></div></div><div class="pd-row frag" data-f="5" style="--c:#1D313E"><div class="pd-d">Vinculación público-privada</div><div class="pd-ar">→</div><div class="pd-p"><b><i>Challenge labs</i> integrados a <i>majors</i></b><span>Producción-consumo cultural · Análisis de mercado · Evaluación de proyectos · Políticas públicas · Responsabilidad social empresarial</span></div></div>
-      <div class="pd-hz frag" data-f="6"><span class="hz-lab">Horizonte</span><b class="hz-g">Fortalecimiento de la identidad académica:</b> <b class="hz-g">escuela interpretativa y explicativa</b> · <b class="hz-g">interdisciplinariedad</b></div>
     </div>
+    <div class="foot"><span>Roberto Velázquez-Quiroz · Proyecto Académico: Investigación, Formación e Incidencia</span><span>Docencia y Transferencia de Conocimientos</span></div>
+  </section>
+
+  <!-- 12b1 · HORIZONTE -->
+  <section class="slide">
+    <div class="kicker">Docencia y Transferencia de Conocimientos</div>
+    <div class="av-col ed-head" style="--c:#445D6B"><h2>Propuesta Docente</h2></div>
+    <h3 class="pd-sub">Doble título: Ingeniería Comercial y Sociología</h3>
+    <p class="pd-lic">Licenciatura en Sociología · Licenciatura en Economía · Licenciatura en Administración de Empresas</p>
+    <div class="hz-stage"><div class="pd-hz hz-big frag" data-f="1"><span class="hz-lab">Horizonte</span><b class="hz-g">Fortalecimiento de la identidad académica:</b> <b class="hz-g">escuela interpretativa y explicativa</b> · <b class="hz-g">interdisciplinariedad</b></div></div>
     <div class="foot"><span>Roberto Velázquez-Quiroz · Proyecto Académico: Investigación, Formación e Incidencia</span><span>Docencia y Transferencia de Conocimientos</span></div>
   </section>
 
@@ -1111,7 +1141,7 @@
     <h3 class="pd-sub">Doble título: Ingeniería Comercial y Sociología</h3>
     <p class="pd-lic">Licenciatura en Sociología · Licenciatura en Economía · Licenciatura en Administración de Empresas</p>
     <h3 class="fu-title">Formación – Gobierno UAI</h3>
-    <div class="fu-row"><div class="fu-card frag" data-f="1" style="--c:#A9B993"><h3>Syllabus originales</h3><small>Cursos</small><ul><li>Economía y redes sociales</li><li>Economía y cultura</li><li>Ciencias sociales computacionales</li><li>Diseño y evaluación de proyectos</li></ul></div><div class="fu-card frag" data-f="2" style="--c:#445D6B"><h3>Apoyo a la docencia</h3><small>Apoyo a la transferencia de conocimiento</small><ul><li>Grupos de estudio</li><li>Campeonatos de innovación</li><li>Conversatorios abiertos</li></ul></div><div class="fu-card frag" data-f="3" style="--c:#1D313E"><h3>Dirección de títulos y pasantías</h3><small>Coordinación</small><ul><li>Intermediación e innovación</li><li>Portafolio de oportunidades</li><li>Redes académico-profesionales</li></ul></div></div>
+    <div class="fu-row"><div class="fu-card frag" data-f="1" style="--c:#F2B8A6"><h3>Syllabus originales</h3><small>Cursos</small><ul><li>Economía y redes sociales</li><li>Economía y cultura</li><li>Ciencias sociales computacionales</li><li>Diseño y evaluación de proyectos</li></ul></div><div class="fu-card frag" data-f="2" style="--c:#E07A5F"><h3>Apoyo a la docencia</h3><small>Apoyo a la transferencia de conocimiento</small><ul><li>Grupos de estudio</li><li>Campeonatos de innovación</li><li>Conversatorios abiertos</li></ul></div><div class="fu-card frag" data-f="3" style="--c:#B5533A"><h3>Dirección de títulos y pasantías</h3><small>Coordinación</small><ul><li>Intermediación e innovación</li><li>Portafolio de oportunidades</li><li>Redes académico-profesionales</li></ul></div></div>
     <div class="foot"><span>Roberto Velázquez-Quiroz · Proyecto Académico: Investigación, Formación e Incidencia</span><span>Docencia y Transferencia de Conocimientos</span></div>
   </section>
 
