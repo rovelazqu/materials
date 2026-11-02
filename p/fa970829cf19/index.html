@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow"><title>Proyecto Académico-Docente</title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><title>Proyecto Académico-Docente</title>
 <style>
 :root{--ink:#222326;--muted:#6E7175;--slate:#445D6B;--night:#1D313E;--rule:#DEDCD6}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -20,7 +21,7 @@ button{font:inherit;font-size:16px;font-weight:600;padding:12px 18px;border:0;bo
   <div class="k">Escuela de Gobierno UAI · 2026</div>
   <h1>Proyecto Académico-Docente</h1>
   <p>Ingrese la clave para ver la presentación.</p>
-  <form id="f"><input id="pw" type="password" autocomplete="current-password" placeholder="Clave" autofocus><button>Entrar</button></form>
+  <form id="f"><input id="pw" type="password" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" placeholder="Clave" autofocus><button>Entrar</button></form>
   <div class="err" id="e"></div>
 </div>
 <script>
@@ -37,6 +38,6 @@ async function go(pw,remember){
     if(remember){try{sessionStorage.setItem('pk',pw)}catch(e){}}
     document.open();document.write(html);document.close();
   }catch(e){document.getElementById('e').textContent='Clave incorrecta.';try{sessionStorage.removeItem('pk')}catch(_){}} }
-document.getElementById('f').addEventListener('submit',ev=>{ev.preventDefault();document.getElementById('e').textContent='';go(document.getElementById('pw').value,true)});
+document.getElementById('f').addEventListener('submit',ev=>{ev.preventDefault();document.getElementById('e').textContent='';go(document.getElementById('pw').value.trim().toLowerCase(),true)});
 try{const s=sessionStorage.getItem('pk');if(s)go(s,false)}catch(e){}
 </script></body></html>
